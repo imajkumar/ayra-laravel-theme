@@ -1,7 +1,5 @@
 <?php
-
 use Opis\Closure\SerializableClosure;
-
 return array(
 
 	/*
