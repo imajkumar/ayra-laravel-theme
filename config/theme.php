@@ -1,6 +1,8 @@
 <?php
 
-$serializer = new SuperClosure\Serializer;
+//$serializer = new SuperClosure\Serializer;
+
+use Opis\Closure\SerializableClosure;
 
 return array(
 
