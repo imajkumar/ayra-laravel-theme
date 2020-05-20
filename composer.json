@@ -17,7 +17,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "opis/closure": "^3.5"
+        "opis/closure": "^3.5@dev"
+        
     },
     "require-dev": {
         "illuminate/support": ">=5.0.1"
