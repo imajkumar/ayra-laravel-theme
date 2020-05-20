@@ -1,5 +1,8 @@
 <?php
 use Opis\Closure\SerializableClosure;
+
+$serializer = new SerializableClosure();
+
 return array(
 
 	/*
@@ -76,13 +79,13 @@ return array(
 	'events' => array(
 
 		// Before all event, this event will effect for global.
-		'before' => serialize(function($theme)
+		'before' => $serializer->serialize(function($theme)
 		{
 			//$theme->setTitle('Something in global.');
 		}),
 
 		// This event will fire as a global you can add any assets you want here.
-		'asset' => serialize(function($asset)
+		'asset' => $serializer->serialize(function($asset)
 		{
 			// Preparing asset you need to serve after.
             $asset->cook('backbone', function($asset)
